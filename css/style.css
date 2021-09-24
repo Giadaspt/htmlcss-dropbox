@@ -230,7 +230,6 @@ h3 {
 
 /* Dropbox Business section */
 .row-second .column {
-  display: inline-block;
   border: none;
 }
 
@@ -238,4 +237,7 @@ h3 {
   width: 100%;
 }
 
+.col {
+  margin-right: 3.5%;
+}
 
