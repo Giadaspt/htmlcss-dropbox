@@ -71,6 +71,7 @@ header {
 .left, .right {
   width: 50%;
   line-height: 64px;
+  min-width: 100px;
 }
 
 .left{
@@ -240,4 +241,120 @@ h3 {
 .col {
   margin-right: 3.5%;
 }
+
+/* section with square in it */
+.last-title {
+  width: 47%;
+  margin-bottom: 64px;
+}
+
+.last-title a {
+  color: blue;
+  text-decoration: underline;
+}
+
+/* section with square */
+.square{
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background-color: blueviolet;
+}
+
+.left-square, .right-square {
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+
+
+
+.little-square {
+  width: 250px;
+  height: 250px;
+  border: 1px solid black;
+
+}
+
+.left-square {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.right-square {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+
+
+.left-square .little-square:nth-child(1) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: yellow;
+}
+
+.left-square .little-square:nth-child(2) {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: orange;
+}
+
+.left-square .little-square:nth-child(3) {
+    position: absolute;
+    left: 0px;
+    bottom: 0;
+    background-color: red;
+}
+
+.left-square .little-square:nth-child(4) {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: green;
+}
+
+.right-square .little-square:nth-child(1) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: yellow;
+}
+
+.right-square .little-square:nth-child(2) {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: orange;
+}
+
+.right-square .little-square:nth-child(3) {
+    position: absolute;
+    left: 0px;
+    bottom: 0;
+    background-color: red;
+}
+
+.right-square .little-square:nth-child(4) {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: green;
+}
+
+.middle-square {
+  position: absolute;
+  left: 500px;
+  right: 500px;
+  top: 0;
+  width: 50%;
+  height: 500px;
+  background-color: black;
+  overflow: auto;
+}
+
 
