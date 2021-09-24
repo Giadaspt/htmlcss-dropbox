@@ -134,34 +134,27 @@ h1 {
 }
 
 /* main */
-main {
-  width: 100%;
-}
-
-.top-main {
+.container{
   width: 80%;
   margin: 0 auto;
+}
+
+/* top part of the main */
+.top-main {
+  margin: 300px auto 32px auto;
 }
 
 h2 {
   font-size: 48px;
-  margin-top: 300px;
   margin-bottom: 48px;
 }
 
-.choice {
-  margin-bottom: 32px;
-}
-
 .choice>span {
+  display: inline-block;
   margin-right: 32px;
 }
 
-.row {
-  width: 80%;
-  margin: 0 auto;
-}
-
+/* row section with columns*/
 .column {
   width: 31%;
   height: 700px;
@@ -170,7 +163,7 @@ h2 {
 }
 
 .col-left, .col-middle {
-  margin-right: 3%;
+  margin-right: 3.5%;
 }
 
 .col-title {
@@ -178,4 +171,47 @@ h2 {
   width: 100%;
   border-bottom: 1px solid black;
   padding: 12px 0;
+}
+
+/* box under the row */
+.under-row {
+  height: 200px;
+  border: 1px solid black;
+  margin-top: 80px;
+}
+
+/* section to contact partners */
+.contacting {
+  display: inline-block;
+  margin: 180px 0;
+}
+
+.talking-guys img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.talking-guys, .text-guys {
+  display: inline-block;
+  float: left;
+}
+
+.talking-guys {
+  width: 51%;
+  margin-right: 5%;
+}
+
+.text-guys {
+  width: 44%;
+  
+}
+
+h3 {
+ font-size: 32px;
+ margin-bottom: 32px;
+}
+
+.text-guys p {
+  margin-bottom: 32px;
+  line-height: 32px;
 }
