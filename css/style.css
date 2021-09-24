@@ -25,6 +25,14 @@ body {
   padding: 6px 24px;
 }
 
+.button.btn:hover{
+  background-color: rgba(0,97,255,.5);
+}
+
+.button.btn-jumbo:hover {
+  background-color: rgba(0,97,255,.5);
+}
+
 /* header */
 header {
   position: fixed;
@@ -56,8 +64,7 @@ nav ul li{
   list-style: none;
 }
 
-li, .button {
-  vertical-align: middle;
+li {
   margin: 0 4%;
 }
 
@@ -75,11 +82,11 @@ a {
 
 li:hover {
   line-height: 64px;
-  border-bottom: 3px solid black;
+  border-bottom: 4px solid black;
 }
 
-.btn:hover{
-  background-color: rgba(0,97,255,.5);
+.disabled {
+  border-bottom: none !important; 
 }
 
 /* jumbotron */
@@ -126,6 +133,49 @@ h1 {
   margin-bottom: 10%;
 }
 
-.btn-jumbo:hover {
-  background-color: rgba(0,97,255,.5);
+/* main */
+main {
+  width: 100%;
+}
+
+.top-main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 48px;
+  margin-top: 300px;
+  margin-bottom: 48px;
+}
+
+.choice {
+  margin-bottom: 32px;
+}
+
+.choice>span {
+  margin-right: 32px;
+}
+
+.row {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.column {
+  width: 31%;
+  height: 700px;
+  border: 1px solid black;
+  float: left;
+}
+
+.col-left, .col-middle {
+  margin-right: 3%;
+}
+
+.col-title {
+  text-align: center;
+  width: 100%;
+  border-bottom: 1px solid black;
+  padding: 12px 0;
 }
