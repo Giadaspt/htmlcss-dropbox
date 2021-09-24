@@ -18,6 +18,8 @@ body {
   clear: both;
 }
 
+/* title h1, h2, h3 etc... */
+
 /* button */
 .button {
   color: white;
@@ -32,6 +34,28 @@ body {
 .button.btn-jumbo:hover {
   background-color: rgba(0,97,255,.5);
 }
+
+.btn-business {
+  font-size: 18px;
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  padding: 8px 24px;
+}
+
+.btn-business:hover {
+  background-color: rgb(216, 216, 216);
+}
+
+/* columns row */
+.column {
+  width: 31%;
+  /* togliere altezza quando inserito contenuto*/
+  height: 700px;
+  border: 1px solid black;
+  float: left;
+}
+
 
 /* header */
 header {
@@ -154,14 +178,7 @@ h2 {
   margin-right: 32px;
 }
 
-/* row section with columns*/
-.column {
-  width: 31%;
-  height: 700px;
-  border: 1px solid black;
-  float: left;
-}
-
+/* columns*/
 .col-left, .col-middle {
   margin-right: 3.5%;
 }
@@ -187,23 +204,18 @@ h2 {
 }
 
 .talking-guys img {
-  width: 100%;
-  vertical-align: middle;
-}
-
-.talking-guys, .text-guys {
-  display: inline-block;
-  float: left;
+  max-width: 100%;
 }
 
 .talking-guys {
   width: 51%;
   margin-right: 5%;
+  float: left;
+  vertical-align: middle;
 }
 
 .text-guys {
-  width: 44%;
-  
+  padding-top: 48px;
 }
 
 h3 {
@@ -215,3 +227,15 @@ h3 {
   margin-bottom: 32px;
   line-height: 32px;
 }
+
+/* Dropbox Business section */
+.row-second .column {
+  display: inline-block;
+  border: none;
+}
+
+.col-pic img {
+  width: 100%;
+}
+
+
