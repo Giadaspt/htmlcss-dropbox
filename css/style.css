@@ -104,6 +104,7 @@ header {
   height: 64px;
   background-color: white;
   z-index: 500;
+  line-height: 64px;
 }
 
 .left, .right {
@@ -122,12 +123,12 @@ header {
   float: right;
 }
 
-nav ul li{
-  display: inline-block;
+li {
   list-style: none;
 }
 
-li {
+nav ul li{
+  display: inline-block;
   padding: 0 3%;
 }
 
@@ -137,15 +138,17 @@ li {
 }
 
 a {
+
   color: black;
   font-size: 16px;
   font-weight: 500;
   text-decoration: none;
+
 }
 
-.list-nav:hover {
+nav li:hover {
   line-height: 64px;
-  border-bottom: 4px solid black;
+  border-bottom: 3px solid black;
 }
 
 .disabled {
@@ -389,7 +392,7 @@ h1 {
   width: 20%;
 }
 
-.line {
+.line-brand {
   width: 8%;
   margin: 48px 0;
   border-bottom: 1px solid rgb(217,217,219);
@@ -481,4 +484,52 @@ h1 {
 .faq-arrow {
   float: right;
   margin-right: 48px;
+}
+
+/* footer */
+footer {
+  background-color: rgb(0,0,0,255);
+}
+
+.end-page, .the-end{
+  width: 90%;
+  min-width: 1600px;
+  margin: 0 auto;
+}
+
+.under-page {
+  padding: 5% 0;
+  float: left;
+  margin-right: 10%; 
+}
+
+.under-page h4{
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+  padding-bottom: 24px;
+}
+
+.under-page li a {
+  color: white;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.under-page a:hover {
+  text-decoration: underline;
+}
+
+/* the end of the page with the possibility to change language*/
+
+.last-line {
+  width: 7%;
+  border-top: 1px solid white;
+  padding-bottom: 40px;
+}
+
+.change-lang {
+  color: grey;
+  font-size: 14px;
+  padding-bottom: 32px;
 }
