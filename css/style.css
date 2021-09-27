@@ -213,8 +213,22 @@ h1 {
 }
 
 .choice>span {
-  display: inline-block;
   margin-right: 32px;
+}
+
+.dot:before {
+  content: '';
+  display: inline-block;
+  box-sizing: border-box;
+  width: 20px;
+  height: 20px;
+  border: 1px solid lightgrey;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.choice .dot:first-child:before {
+  border: 5px solid rgb(0,97,255);
 }
 
 /* columns*/
