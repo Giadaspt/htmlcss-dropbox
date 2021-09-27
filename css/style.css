@@ -510,7 +510,7 @@ h1 {
   padding: 6%
 }
 
-.go-down, .faq-title {
+.go-down{
   padding: 48px 0;
   border-bottom: 2px solid rgb(217,217,219);
 }
@@ -522,6 +522,28 @@ h1 {
 .faq-arrow {
   float: right;
   padding-right: 48px;
+}
+
+.drop-down p {
+  padding-bottom: 48px;
+  border-bottom: 2px solid rgb(217,217,219);
+}
+
+.drop-down {
+  display: none;
+}
+
+.go-down:hover {
+  border: none;
+}
+
+.faq-arrow i:hover {
+  transform: rotate(180deg);
+}
+
+.go-down:hover + .drop-down {
+  display: inline-block;
+
 }
 
 /* footer */
@@ -558,13 +580,7 @@ footer {
   text-decoration: underline;
 }
 
-.drop-down {
-  display: none;
-}
 
-.go-down:hover .drop-down {
-  display: inline-block;
-}
 
 /* the end of the page with the possibility to change language*/
 
