@@ -6,13 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <link rel="stylesheet" href="css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
 
   
   <title>htmlcss-dropbox</title>
@@ -42,7 +47,12 @@
     <section class="right">
       <nav>
         <ul>
-          <li> <a href="#"> Supporto </a> </li>
+          <li class="dp"><a href="#"> Supporto </a> 
+            <div class="dp-content">
+              <p>Centro assistenza</p> 
+              <p>Forum della community</p> 
+            </div>
+          </li>
           <li> <a href="#"> Contatta l'ufficio vendite </a> </li>
           <li> <a href="#"> Accedi </a> </li>
           <li class="disabled"> 
@@ -65,12 +75,14 @@
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis necessitatibus soluta cum eius non rerum aliquam magnam minima quidem ratione. Possimus non iste sunt tempore deserunt, quae officiis temporibus fuga, natus ducimus neque obcaecati eaque, deleniti sapiente ratione optio!
       </p>
       <div class="cta-jumbo">
-        <a class="button btn-jumbo" href="#"> Inizia la prova gratuita <a>
+        <a class="button btn-jumbo" href="#"> 
+          Inizia la tua prova gratuita 
+        <a>
       </div>
+      
       <p class="text-left-jumbo">
         Annulla in qualsiasi momento 
       </p>
-   
       <div class="arrow">
         <a href="#tap-arrow"><i class="fas fa-arrow-down"></i></a>
       </div>
@@ -83,9 +95,9 @@
   </section>
  
   <!-- main -->
-  <main class="container" id="tap-arrow">  
+  <main id="tap-arrow" class="container" >   
     <!-- section of second title and radio buttons -->
-    <section class="top-main"  id="tap-arrow">
+    <section class="top-main"  >
       <h2> Trova un piano Dropbox Business che fa per te </h2>
       <div class="choice">
         <span class="dot"> Fatturazione mensile</span>
@@ -110,9 +122,9 @@
           </div>
 
           <div>
-            <p class="mt"><i class="far fa-user"></i> 1 utente</p>
-            <p class="mt"> <i class="far fa-folder"></i> 3 TB di spoazio di archiviazione sicuro </p>
-            <div class="mt clearfix">
+            <p class="pt"><i class="far fa-user"></i> 1 utente</p>
+            <p class="pt"> <i class="far fa-folder"></i> 3 TB di spoazio di archiviazione sicuro </p>
+            <div class="pt clearfix">
               <div class="icon"> 
                 <i class="fas fa-pencil-alt"></i>
               </div> 
@@ -135,23 +147,15 @@
 
           <div class="end-col">
             <h4>Punti salienti</h4>
-            <div class="mt clearfix">
+            <div class="pt clearfix">
               <div class="icon icon-blue"> 
                 <i class="fas fa-check"></i> 
               </div> 
               <div class="end-col-text">
-                <span> Lorem ipsum dolor sit, amet consectetur adipisicing elit adipisicing elit.</span>
+                <span> Lorem ipsum dolor sit, amet consectetur  elit adipisicing elit.</span>
               </div>
             </div>
-            <div class="mt clearfix">
-              <div class="icon icon-blue"> 
-                <i class="fas fa-check"></i> 
-              </div> 
-              <div class="end-col-text">
-                <span> Lorem ipsum dolor sit, amet consectetur adipisicing </span>
-              </div>
-            </div>
-            <div class="mt clearfix">
+            <div class="pt clearfix">
               <div class="icon icon-blue"> 
                 <i class="fas fa-check"></i> 
               </div> 
@@ -159,7 +163,7 @@
                 <span> Lorem ipsum dolor sit, amet consectetur adipisicing </span>
               </div>
             </div>
-            <div class="mt clearfix">
+            <div class="pt clearfix">
               <div class="icon icon-blue"> 
                 <i class="fas fa-check"></i> 
               </div> 
@@ -167,7 +171,15 @@
                 <span> Lorem ipsum dolor sit, amet consectetur adipisicing </span>
               </div>
             </div>
-            <div class="mt clearfix">
+            <div class="pt clearfix">
+              <div class="icon icon-blue"> 
+                <i class="fas fa-check"></i> 
+              </div> 
+              <div class="end-col-text">
+                <span> Lorem ipsum dolor sit, amet consectetur adipisicing </span>
+              </div>
+            </div>
+            <div class="pt clearfix">
               <div class="icon icon-blue"> 
                 <i class="fas fa-check"></i> 
               </div> 
@@ -193,9 +205,9 @@
           </div>
 
           <div>
-            <p class="mt"><i class="fas fa-user"></i> + 1 utente</p>
-            <p class="mt"> <i class="far fa-folder"></i> 3 TB di spoazio di archiviazione sicuro </p>
-            <div class="mt clearfix">
+            <p class="pt"><i class="fas fa-user"></i> + 1 utente</p>
+            <p class="pt"> <i class="far fa-folder"></i> 3 TB di spoazio di archiviazione sicuro </p>
+            <div class="pt clearfix">
               <div class="icon"> 
                 <i class="far fa-smile"></i>
               </div> 
@@ -218,7 +230,7 @@
 
           <div class="end-col">
             <h4>Punti salienti</h4>
-            <div class="mt clearfix">
+            <div class="pt clearfix">
               <div class="icon icon-blue"> 
                 <i class="fas fa-check"></i> 
               </div> 
@@ -226,7 +238,7 @@
                 <span> Lorem ipsum dolor sit, amet consectetur adipisicing elit adipisicing elit.</span>
               </div>
             </div>
-            <div class="mt clearfix">
+            <div class="pt clearfix">
               <div class="icon icon-blue"> 
                 <i class="fas fa-check"></i> 
               </div> 
@@ -234,7 +246,7 @@
                 <span> Lorem ipsum dolor sit, amet consectetur adipisicing </span>
               </div>
             </div>
-            <div class="mt clearfix">
+            <div class="pt clearfix">
               <div class="icon icon-blue"> 
                 <i class="fas fa-check"></i> 
               </div> 
@@ -242,7 +254,7 @@
                 <span> Lorem ipsum dolor sit, amet consectetur adipisicing </span>
               </div>
             </div>
-            <div class="mt clearfix">
+            <div class="pt clearfix">
               <div class="icon icon-blue"> 
                 <i class="fas fa-check"></i> 
               </div> 
@@ -250,7 +262,7 @@
                 <span> Lorem ipsum dolor sit, amet consectetur adipisicing </span>
               </div>
             </div>
-            <div class="mt clearfix">
+            <div class="pt clearfix">
               <div class="icon icon-blue"> 
                 <i class="fas fa-check"></i> 
               </div> 
@@ -276,9 +288,9 @@
           </div>
 
           <div>
-            <p class="mt"><i class="fas fa-user"></i> + 1 utente</p>
-            <p class="mt"><i class="far fa-smile"></i> 3 TB di spoazio di archiviazione sicuro </p>
-            <div class="mt clearfix">
+            <p class="pt"><i class="fas fa-user"></i> + 1 utente</p>
+            <p class="pt"><i class="far fa-smile"></i> 3 TB di spoazio di archiviazione sicuro </p>
+            <div class="pt clearfix">
               <div class="icon"> 
                 <i class="fas fa-pencil-alt"></i>
               </div> 
@@ -301,7 +313,7 @@
 
           <div class="end-col">
             <h4>Punti salienti</h4>
-            <div class="mt clearfix">
+            <div class="pt clearfix">
               <div class="icon icon-blue"> 
                 <i class="fas fa-check"></i> 
               </div> 
@@ -309,7 +321,7 @@
                 <span> Lorem ipsum dolor sit, amet consectetur adipisicing elit adipisicing elit.</span>
               </div>
             </div>
-            <div class="mt clearfix">
+            <div class="pt clearfix">
               <div class="icon icon-blue"> 
                 <i class="fas fa-check"></i> 
               </div> 
@@ -317,7 +329,7 @@
                 <span> Lorem ipsum dolor sit, amet consectetur adipisicing </span>
               </div>
             </div>
-            <div class="mt clearfix">
+            <div class="pt clearfix">
               <div class="icon icon-blue"> 
                 <i class="fas fa-check"></i> 
               </div> 
@@ -325,7 +337,7 @@
                 <span> Lorem ipsum dolor sit, amet consectetur adipisicing </span>
               </div>
             </div>
-            <div class="mt clearfix">
+            <div class="pt clearfix">
               <div class="icon icon-blue"> 
                 <i class="fas fa-check"></i> 
               </div> 
@@ -333,7 +345,7 @@
                 <span> Lorem ipsum dolor sit, amet consectetur adipisicing </span>
               </div>
             </div>
-            <div class="mt clearfix">
+            <div class="pt clearfix">
               <div class="icon icon-blue"> 
                 <i class="fas fa-check"></i> 
               </div> 
