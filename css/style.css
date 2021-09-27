@@ -128,7 +128,7 @@ nav ul li{
 }
 
 li {
-  margin: 0 4%;
+  padding: 0 3%;
 }
 
 .logo img{
@@ -283,16 +283,16 @@ h1 {
 }
 
 .box-text {
-  margin: 48px;
+  padding: 48px;
 }
 
 .box-text h3 {
-  margin-bottom: 16px;
+  padding-bottom: 16px;
 }
 
 .box-text p {
   font-size: 16px;
-  margin: 48px 0 0 0;
+  padding: 48px 0 0 0;
 }
 
 /* section to contact partners */
@@ -307,7 +307,7 @@ h1 {
 
 .talking-guys {
   width: 51%;
-  margin-right: 5%;
+  padding-right: 5%;
   float: left;
   vertical-align: middle;
 }
@@ -317,11 +317,11 @@ h1 {
 }
 
 .text-guys h3 {
- margin-bottom: 32px;
+ padding-bottom: 32px;
 }
 
 .text-guys p {
-  margin-bottom: 32px;
+  padding-bottom: 40px;
   line-height: 32px;
 }
 
@@ -330,12 +330,16 @@ h1 {
   border: none;
 }
 
+.row-second h2 {
+  padding-bottom: 48px;
+}
+
 .col-pic img {
   width: 100%;
 }
 
 .col h3 {
-  margin-bottom: 24px;
+  padding-bottom: 24px;
 }
 
 .col {
@@ -343,17 +347,17 @@ h1 {
 }
 
 .row-2 {
-  margin: 8% 0 20% 0;
+  margin: 8% 0 16% 0;
 }
 
 /* section with square in it */
 .last-title {
   width: 47%;
-  margin-bottom: 64px;
+  padding-bottom: 64px;
 }
 
 .last-title h2 {
-  margin-bottom: 32px;
+  padding-bottom: 32px;
 }
 
 .last-title a {
@@ -362,60 +366,58 @@ h1 {
 }
 
 /* section with square */
-.puzzle{
-  background-color: rgba(245,245,245);
-}
 
 .left-square, .right-square {
   width: 25%;
+  height: 25vw;
   float: left;
 }
 
 .middle-square {
-  width:50%;
-  max-height: 68vh;
-  float: left;
-}
-
-.little-square {
   width: 50%;
+  height: 25vw;
   float: left;
+  overflow: auto;
+  background-color: rgba(245,245,245);
 }
 
-.middle-square .center-text {
-  width: 50%;
-  margin: 64px;
-  overflow: hidden;
+.center-text {
+  padding: 48px;
 }
 
-.left-square {
-  background-color: greenyellow;
-}
-
-.right-square {
-  background-color: green;
-}
-
- /* .puzzle::after, .middle-square::after {
-  content: "";
-  display: block;
-  padding-bottom: 100%;
-} */
-
-.little-square:after {
-  content: "";
-  display: block;
-  padding-bottom: 100%;
+.brand img{
+  width: 20%;
 }
 
 .line {
-  width: 25%;
+  width: 8%;
   margin: 48px 0;
-  border-bottom: 1px solid brown;
+  border-bottom: 1px solid rgb(217,217,219);
+}
+
+.center-text p:nth-child(3) {
+  padding-top: 48px;
+}
+
+.little-square {
+  height: 50%;
+  width: 50%;
+  text-align: center;
+  float: left;
+}
+
+.little-square img {
+  width: 60%;
+  margin: 45% auto;
+  filter: invert(150%);
 }
 
 .left-square .little-square:nth-child(1) {
   background-color: rgb(162,211,155);
+}
+
+.little-act:active {
+  border: 15px solid rgb(209,233,205);
 }
 
 .left-square .little-square:nth-child(2) {
@@ -431,7 +433,6 @@ h1 {
 }
 
 /* 4 square to the right */
-
 .right-square .little-square:nth-child(1) {
   background-color: rgb(213,2,31);
 }
@@ -449,7 +450,7 @@ h1 {
 }
 
 
-/* square under puzzle */
+/* box under puzzle */
 .under-puzzle {
   width: 100%;
   height: 400px;
