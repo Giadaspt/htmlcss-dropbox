@@ -19,6 +19,22 @@ body {
 }
 
 /* title h1, h2, h3 etc... */
+h1 {
+  font-size: 85px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+h4 {
+  font-size: 19px;
+}
 
 /* button */
 .button {
@@ -27,12 +43,24 @@ body {
   padding: 6px 24px;
 }
 
-.button.btn:hover{
+.button:hover{
   background-color: rgba(0,97,255,.5);
 }
 
 .button.btn-jumbo:hover {
   background-color: rgba(0,97,255,.5);
+}
+
+.button.btn-col {
+  width: 100%;
+  padding: 3% 24%;
+  float: left;
+  margin: 24px 0;
+}
+
+.box-button {
+  padding: 10px 120px;
+  float: right;
 }
 
 .btn-business {
@@ -47,15 +75,24 @@ body {
   background-color: rgb(216, 216, 216);
 }
 
+.btn-last {
+  color: black;
+  background-color: white;
+  padding: 12px 120px;
+  float: right;
+}
+
+.btn-last:hover {
+  background-color: lightgray;
+  border: 1px solid  darkgray;
+}
+
 /* columns row */
 .column {
   width: 31%;
-  /* togliere altezza quando inserito contenuto*/
-  height: 700px;
   border: 1px solid black;
   float: left;
 }
-
 
 /* header */
 header {
@@ -63,6 +100,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
+  min-width: 1200px;
   height: 64px;
   background-color: white;
   z-index: 500;
@@ -105,13 +143,13 @@ a {
   text-decoration: none;
 }
 
-li:hover {
+.list-nav:hover {
   line-height: 64px;
   border-bottom: 4px solid black;
 }
 
 .disabled {
-  border-bottom: none !important; 
+  border-bottom: none !important;
 }
 
 /* jumbotron */
@@ -140,8 +178,6 @@ li:hover {
 }
 
 h1 {
-  font-size: 85px;
-  font-weight: 600;
   margin: 4% 10% 4% 10%;
 }
 
@@ -169,8 +205,7 @@ h1 {
   margin: 300px auto 32px auto;
 }
 
-h2 {
-  font-size: 48px;
+.top-main h2 {
   margin-bottom: 48px;
 }
 
@@ -191,11 +226,73 @@ h2 {
   padding: 12px 0;
 }
 
+.in-col {
+  margin: 6% 0 50% 0;
+}
+
+.in-col>div {
+ padding: 2% 6%;
+}
+
+.in-col h3 {
+  margin-bottom: 24px;
+}
+
+.price {
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.link-acquista-ora a{
+  color:  rgb(0,97,255);
+  text-decoration: underline;
+  margin-top: 40px;
+}
+
+.line-acquista-ora {
+  width: 15%;
+  border-bottom: 1px solid lightgrey;
+  margin: 40px 0;
+}
+
+.end-col h4 {
+  margin-bottom: 24px;
+}
+
+.icon, .end-col-text {
+  float: left;
+}
+
+.icon-blue {
+  color:  rgb(0,97,255);;
+}
+
+.end-col-text {
+  width: 96%;
+  padding-left: 10px;
+}
+
+.mt {
+  margin-top: 32px;
+}
+
 /* box under the row */
 .under-row {
-  height: 200px;
   border: 1px solid black;
   margin-top: 80px;
+}
+
+.box-text {
+  margin: 48px;
+}
+
+.box-text h3 {
+  margin-bottom: 16px;
+}
+
+.box-text p {
+  font-size: 16px;
+  margin: 48px 0 0 0;
 }
 
 /* section to contact partners */
@@ -219,8 +316,7 @@ h2 {
   padding-top: 48px;
 }
 
-h3 {
- font-size: 32px;
+.text-guys h3 {
  margin-bottom: 32px;
 }
 
@@ -238,8 +334,16 @@ h3 {
   width: 100%;
 }
 
+.col h3 {
+  margin-bottom: 24px;
+}
+
 .col {
   margin-right: 3.5%;
+}
+
+.row-2 {
+  margin: 8% 0 20% 0;
 }
 
 /* section with square in it */
@@ -248,112 +352,132 @@ h3 {
   margin-bottom: 64px;
 }
 
+.last-title h2 {
+  margin-bottom: 32px;
+}
+
 .last-title a {
   color: blue;
   text-decoration: underline;
 }
 
 /* section with square */
-.square{
-  position: relative;
-  width: 100%;
-  height: 500px;
-  background-color: blueviolet;
+.puzzle{
+  background-color: rgba(245,245,245);
 }
 
 .left-square, .right-square {
-  position: relative;
-  width: 500px;
-  height: 500px;
+  width: 25%;
+  float: left;
 }
 
-
+.middle-square {
+  width:50%;
+  max-height: 68vh;
+  float: left;
+}
 
 .little-square {
-  width: 250px;
-  height: 250px;
-  border: 1px solid black;
+  width: 50%;
+  float: left;
+}
 
+.middle-square .center-text {
+  width: 50%;
+  margin: 64px;
+  overflow: hidden;
 }
 
 .left-square {
-  position: absolute;
-  left: 0;
-  top: 0;
+  background-color: greenyellow;
 }
 
 .right-square {
-  position: absolute;
-  right: 0;
-  top: 0;
+  background-color: green;
 }
 
-/* 4 squares to the left */
+ /* .puzzle::after, .middle-square::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+} */
+
+.little-square:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.line {
+  width: 25%;
+  margin: 48px 0;
+  border-bottom: 1px solid brown;
+}
+
 .left-square .little-square:nth-child(1) {
-    position: absolute;
-    left: 0;
-    top: 0;
-    background-color: rgb(162,211,155);
+  background-color: rgb(162,211,155);
 }
 
 .left-square .little-square:nth-child(2) {
-    position: absolute;
-    right: 0;
-    top: 0;
-    background-color: rgb(97,8,44);
+  background-color: rgb(97,8,44);
 }
 
 .left-square .little-square:nth-child(3) {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    background-color: rgb(249,28,29);
+  background-color: rgb(29,147,206);
 }
 
 .left-square .little-square:nth-child(4) {
-    position: absolute;
-    left: 0px;
-    bottom: 0;
-    background-color: rgb(29,147,206);
+  background-color: rgb(249,28,29);
 }
 
 /* 4 square to the right */
+
 .right-square .little-square:nth-child(1) {
-    position: absolute;
-    left: 0;
-    top: 0;
-    background-color: rgb(213,2,31);
+  background-color: rgb(213,2,31);
 }
 
 .right-square .little-square:nth-child(2) {
-    position: absolute;
-    right: 0;
-    top: 0;
-    background-color: rgb(180,208,231);
+  background-color: rgb(180,208,231);
 }
 
 .right-square .little-square:nth-child(3) {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    background-color: rgb(254,216,48);
+  background-color: rgb(13,36,129);
 }
 
 .right-square .little-square:nth-child(4) {
-    position: absolute;
-    left: 0px;
-    bottom: 0;
-    background-color: rgb(13,36,129);
+  background-color: rgb(254,216,48);
 }
 
-/* square in the middle */
-.middle-square {
-  position: absolute;
-  left: 500px;
-  right: 500px;
-  top: 0;
-  width: 50%;
-  height: 500px;
-  background-color: black;
-  overflow: auto;
+
+/* square under puzzle */
+.under-puzzle {
+  width: 100%;
+  height: 400px;
+  background-color: rgb(180,208,231);
+}
+
+.in-under {
+  width: 80%;
+  margin: 0 auto;
+  padding: 7% 0;
+}
+
+.in-under .last-title h2 {
+  color: rgb(97,8,44);
+}
+
+/* FAQ */
+.faq {
+  margin-top: 10%;
+  padding-bottom: 100px;
+}
+
+.faq div, .faq h2 {
+  padding: 48px 0;
+  border-bottom: 1px solid rgb(217,217,219);
+}
+
+.faq-arrow {
+  float: right;
+  margin-right: 48px;
 }
